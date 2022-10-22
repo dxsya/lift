@@ -9,6 +9,7 @@
     flex-direction: column;
     font-size: 40px;
     overflow: auto;
+    z-index: 1;
 }
 
 .buttons {
@@ -42,7 +43,7 @@
     border: 5px solid black;
     border-top: 5px solid rgb(113, 68, 55);
     border-bottom: 5px solid rgb(113, 68, 55);
-    z-index: -1;
+    z-index: 1;
 }
 
 .lifted {
@@ -62,7 +63,7 @@
     height: 80px;
     background-color: rgb(155, 115, 40);
     border: 2px solid black;
-    z-index: -2;
+    z-index: 0;
     left: 138px;
     top: 3124px;
 
@@ -79,6 +80,7 @@
 
 .door {
     background-color: gray;
+    opacity: 50%;
 }
 
 .first {
