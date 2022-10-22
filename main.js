@@ -46,9 +46,6 @@ floorBtn[10].addEventListener("click", () => {
 floorBtn[11].addEventListener("click", () => {
     lftFloor.toFloor(11);
 });
-floorBtn[11].addEventListener("click", () => {
-    lftFloor.toFloor(11);
-});
 floorBtn[12].addEventListener("click", () => {
     lftFloor.toFloor(12);
 });
