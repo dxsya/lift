@@ -8,81 +8,84 @@ for (i = 0; i < 15; i++) {
     doors[i].classList.add = `d${i}`;
     console.log(doors[i]);
 }
-console.log(document.querySelector(".door3"));
 
 floorBtn[0].addEventListener("click", () => {
-    toFloor(0);
+    lftFloor.toFloor(0);
 });
 
 floorBtn[1].addEventListener("click", () => {
-    toFloor(1);
+    lftFloor.toFloor(1);
 });
 floorBtn[2].addEventListener("click", () => {
-    toFloor(2);
+    lftFloor.toFloor(2);
 });
 floorBtn[3].addEventListener("click", () => {
-    toFloor(3);
+    lftFloor.toFloor(3);
 });
 floorBtn[4].addEventListener("click", () => {
-    toFloor(4);
+    lftFloor.toFloor(4);
 });
 floorBtn[5].addEventListener("click", () => {
-    toFloor(5);
+    lftFloor.toFloor(5);
 });
 floorBtn[6].addEventListener("click", () => {
-    toFloor(6);
+    lftFloor.toFloor(6);
 });
 floorBtn[7].addEventListener("click", () => {
-    toFloor(7);
+    lftFloor.toFloor(7);
 });
 floorBtn[8].addEventListener("click", () => {
-    toFloor(8);
+    lftFloor.toFloor(8);
 });
 floorBtn[9].addEventListener("click", () => {
-    toFloor(9);
+    lftFloor.toFloor(9);
 });
 floorBtn[10].addEventListener("click", () => {
-    toFloor(10);
+    lftFloor.toFloor(10);
 });
 floorBtn[11].addEventListener("click", () => {
-    toFloor(11);
+    lftFloor.toFloor(11);
 });
 floorBtn[11].addEventListener("click", () => {
-    toFloor(11);
+    lftFloor.toFloor(11);
 });
 floorBtn[12].addEventListener("click", () => {
-    toFloor(12);
+    lftFloor.toFloor(12);
 });
 floorBtn[13].addEventListener("click", () => {
-    toFloor(13);
+    lftFloor.toFloor(13);
 });
 floorBtn[14].addEventListener("click", () => {
-    toFloor(14);
+    lftFloor.toFloor(14);
 });
 floorBtn[15].addEventListener("click", () => {
-    toFloor(15);
+    lftFloor.toFloor(15);
 });
 
-function toFloor(floor) {
-    let top = 3124 - 200 * floor;
-    lift.style.top = `${top}px`;
-    lift.style.transition = "4s";
-    lift.style.zIndex = "-2";
-    lift.style.transitionDelay = "1.5s";
-    doors.forEach((x) => {
-        x.style.left = "133px";
-        x.style.transition = "2s";
-    });
-    doors[15 - floor].style.left = "82px";
-    doors[15 - floor].style.transition = "1s";
-    doors[15 - floor].style.transitionDelay = "5.5s";
-}
+let lftFloor = {
+    current: 0,
+    toFloor: function (floor) {
+        let pos = 3013 - 200 * this.current;
+        window.scrollTo(0, pos);
+        let top = 3124 - 200 * floor;
+        lift.style.top = `${top}px`;
+        lift.style.transition = "4s";
+        lift.style.transitionDelay = "1.5s";
+        doors.forEach((x) => {
+            x.style.left = "133px";
+            x.style.transition = "2s";
+        });
+        doors[15 - floor].style.left = "82px";
+        doors[15 - floor].style.transition = "1s";
+        doors[15 - floor].style.transitionDelay = "5.5s";
+        this.current = floor;
+    },
+};
 
 // floorBtn[0].addEventListener("click", () => {
 //     lift.style.top = "3124px";
 //     lift.style.zIndex = "-2";
 //     lift.style.transition = "4s";
-//     // lift.style.transitionTimingFunction = "linear";
 //     lift.style.transitionDelay = "1.5s";
 //     doors.forEach((x) => {
 //         x.style.left = "133px";
