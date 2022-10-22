@@ -35,7 +35,7 @@ $("#btn4").click(function () {
         .delay(1000)
         .animate(
             {
-                scrollTop: $("#fl4").offset().top,
+                scrollTop: $("#fl5").offset().top,
             },
             4200
         );
@@ -46,7 +46,7 @@ $("#btn5").click(function () {
         .delay(1000)
         .animate(
             {
-                scrollTop: $("#fl5").offset().top,
+                scrollTop: $("#fl6").offset().top,
             },
             4200
         );
@@ -57,7 +57,7 @@ $("#btn6").click(function () {
         .delay(1000)
         .animate(
             {
-                scrollTop: $("#fl6").offset().top,
+                scrollTop: $("#fl7").offset().top,
             },
             4200
         );
@@ -68,7 +68,7 @@ $("#btn7").click(function () {
         .delay(1000)
         .animate(
             {
-                scrollTop: $("#fl7").offset().top,
+                scrollTop: $("#fl8").offset().top,
             },
             4200
         );
@@ -79,23 +79,12 @@ $("#btn8").click(function () {
         .delay(1000)
         .animate(
             {
-                scrollTop: $("#fl8").offset().top,
-            },
-            4200
-        );
-});
-$("#btn9").click(function () {
-    $("html, body")
-        .delay(1000)
-        .animate(
-            {
                 scrollTop: $("#fl9").offset().top,
             },
             4200
         );
 });
-
-$("#btn10").click(function () {
+$("#btn9").click(function () {
     $("html, body")
         .delay(1000)
         .animate(
@@ -106,7 +95,7 @@ $("#btn10").click(function () {
         );
 });
 
-$("#btn11").click(function () {
+$("#btn10").click(function () {
     $("html, body")
         .delay(1000)
         .animate(
@@ -117,7 +106,7 @@ $("#btn11").click(function () {
         );
 });
 
-$("#btn12").click(function () {
+$("#btn11").click(function () {
     $("html, body")
         .delay(1000)
         .animate(
@@ -128,7 +117,7 @@ $("#btn12").click(function () {
         );
 });
 
-$("#btn13").click(function () {
+$("#btn12").click(function () {
     $("html, body")
         .delay(1000)
         .animate(
@@ -139,7 +128,7 @@ $("#btn13").click(function () {
         );
 });
 
-$("#btn14").click(function () {
+$("#btn13").click(function () {
     $("html, body")
         .delay(1000)
         .animate(
@@ -150,12 +139,23 @@ $("#btn14").click(function () {
         );
 });
 
-$("#btn15").click(function () {
+$("#btn14").click(function () {
     $("html, body")
         .delay(1000)
         .animate(
             {
                 scrollTop: $("#fl15").offset().top,
+            },
+            4200
+        );
+});
+
+$("#btn15").click(function () {
+    $("html, body")
+        .delay(1000)
+        .animate(
+            {
+                scrollTop: $("#fl16").offset().top,
             },
             4200
         );

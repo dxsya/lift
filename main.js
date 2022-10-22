@@ -62,7 +62,7 @@ floorBtn[15].addEventListener("click", () => {
 let lftFloor = {
     current: 0,
     toFloor: function (floor) {
-        let pos = 3013 - 200 * this.current;
+        let pos = 2810 - 200 * this.current;
         window.scrollTo(0, pos);
         let top = 3124 - 200 * floor;
         lift.style.top = `${top}px`;
