@@ -9,55 +9,11 @@ for (i = 0; i < 15; i++) {
     console.log(doors[i]);
 }
 
-floorBtn[0].addEventListener("click", () => {
-    lftFloor.toFloor(0);
-});
-
-floorBtn[1].addEventListener("click", () => {
-    lftFloor.toFloor(1);
-});
-floorBtn[2].addEventListener("click", () => {
-    lftFloor.toFloor(2);
-});
-floorBtn[3].addEventListener("click", () => {
-    lftFloor.toFloor(3);
-});
-floorBtn[4].addEventListener("click", () => {
-    lftFloor.toFloor(4);
-});
-floorBtn[5].addEventListener("click", () => {
-    lftFloor.toFloor(5);
-});
-floorBtn[6].addEventListener("click", () => {
-    lftFloor.toFloor(6);
-});
-floorBtn[7].addEventListener("click", () => {
-    lftFloor.toFloor(7);
-});
-floorBtn[8].addEventListener("click", () => {
-    lftFloor.toFloor(8);
-});
-floorBtn[9].addEventListener("click", () => {
-    lftFloor.toFloor(9);
-});
-floorBtn[10].addEventListener("click", () => {
-    lftFloor.toFloor(10);
-});
-floorBtn[11].addEventListener("click", () => {
-    lftFloor.toFloor(11);
-});
-floorBtn[12].addEventListener("click", () => {
-    lftFloor.toFloor(12);
-});
-floorBtn[13].addEventListener("click", () => {
-    lftFloor.toFloor(13);
-});
-floorBtn[14].addEventListener("click", () => {
-    lftFloor.toFloor(14);
-});
-floorBtn[15].addEventListener("click", () => {
-    lftFloor.toFloor(15);
-});
+for (let i = 0; i < floorBtn.length; i++) {
+    floorBtn[i].addEventListener("click", () => {
+        lftFloor.toFloor(i);
+    });
+}
 
 let lftFloor = {
     current: 0,
@@ -78,6 +34,56 @@ let lftFloor = {
         this.current = floor;
     },
 };
+
+// floorBtn[0].addEventListener("click", () => {
+//     lftFloor.toFloor(0);
+// });
+
+// floorBtn[1].addEventListener("click", () => {
+//     lftFloor.toFloor(1);
+// });
+// floorBtn[2].addEventListener("click", () => {
+//     lftFloor.toFloor(2);
+// });
+// floorBtn[3].addEventListener("click", () => {
+//     lftFloor.toFloor(3);
+// });
+// floorBtn[4].addEventListener("click", () => {
+//     lftFloor.toFloor(4);
+// });
+// floorBtn[5].addEventListener("click", () => {
+//     lftFloor.toFloor(5);
+// });
+// floorBtn[6].addEventListener("click", () => {
+//     lftFloor.toFloor(6);
+// });
+// floorBtn[7].addEventListener("click", () => {
+//     lftFloor.toFloor(7);
+// });
+// floorBtn[8].addEventListener("click", () => {
+//     lftFloor.toFloor(8);
+// });
+// floorBtn[9].addEventListener("click", () => {
+//     lftFloor.toFloor(9);
+// });
+// floorBtn[10].addEventListener("click", () => {
+//     lftFloor.toFloor(10);
+// });
+// floorBtn[11].addEventListener("click", () => {
+//     lftFloor.toFloor(11);
+// });
+// floorBtn[12].addEventListener("click", () => {
+//     lftFloor.toFloor(12);
+// });
+// floorBtn[13].addEventListener("click", () => {
+//     lftFloor.toFloor(13);
+// });
+// floorBtn[14].addEventListener("click", () => {
+//     lftFloor.toFloor(14);
+// });
+// floorBtn[15].addEventListener("click", () => {
+//     lftFloor.toFloor(15);
+// });
 
 // floorBtn[0].addEventListener("click", () => {
 //     lift.style.top = "3124px";
